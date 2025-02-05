@@ -50,4 +50,77 @@ let calculator= {
 }
 console.log(calculator.add(12,13))
 
+let clientPrice = Number(prompt("Enter price (200 less than original price):"));
 
+let library = {
+    book1: {
+        title: "Pir-e-Kamil",
+        author: "Umera Ahmed",
+        year: 2014,
+        original_price: 2000,
+        clientPrice: clientPrice,
+        increment: function () {
+            if (this.clientPrice < this.original_price - 200) {
+                alert("This price is too low!");
+            }
+            if(this.original_price-200===clientPrice){
+                console.log("the book is your's")
+            }
+        }
+    },
+    book2: {
+        title: "Aab-e-Hayat",
+        author: "Umera Ahmed",
+        year: 2016,
+        original_price: 3000,
+        clientPrice: clientPrice,
+        increment: function () {
+            if (this.clientPrice < this.original_price - 200) {
+                alert("This price is too low!");
+            }
+        }
+    },
+    book3: {
+        title: "Jannat Ka Patta",
+        author: "Nimra Ahmed",
+        year: 2014,
+        original_price: 4000,
+        clientPrice: clientPrice,
+        increment: function () {
+            if (this.clientPrice < this.original_price - 200) {
+                alert("This price is too low!");
+            }
+        }
+    },
+    book4: {
+        title: "Jannat Ka Patta 2",
+        author: "Nimra Ahmed",
+        year: 2015,
+        original_price: 5000,
+        clientPrice: clientPrice,
+        increment: function () {
+            if (this.clientPrice < this.original_price - 200) {
+                alert("This price is too low!");
+            }
+        }
+    },
+    book5: {
+        title: "Salahuddin",
+        author: "Qasim",
+        year: 2014,
+        original_price: 3000,
+        clientPrice: clientPrice,
+        increment: function () {
+            if (this.clientPrice < this.original_price - 200) {
+                alert("This price is too low!");
+            }
+        }
+    }
+};
+
+
+console.log(library.book1.increment());
+// library.book2.increment();
+// library.book3.increment();
+// library.book4.increment();
+// library.book5.increment();
