@@ -143,3 +143,29 @@ for (let i=0;i<arr.length;i++){
     }
 }
 console.log(arr)
+
+// ######################
+function person(name,job,year){
+    this.name = name;
+    this.job=job;
+
+    this.year=year;
+}
+ person.prototype.calculateyear = function(){
+    console.log("this perrson has "+(2019-this.year) + "of experience" )
+ }
+ console.log(person.prototype)
+ let person1 = new person('develpore','fdff',2000)
+ console.log(person1)
+person1.calculateyear()
+
+
+ const book = {
+    title: "Atomic Habits",
+    author: "James Clear",
+    year: 2018,
+    greet:function(){
+        console.log(`${this.title} was written by ${this.author} in ${this.year}`)
+    }
+  };
+  console.log(book.greet())
