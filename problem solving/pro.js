@@ -164,8 +164,8 @@
 // }
 // let newa = second([1 ,2, 34, 56,7 ,39,40])
 // console.log(newa)
-
-// function rotaion (arr , k){
+// rotation
+// function cle (arr , k){
 //     let n = arr.length;
 //     k = k%n;
 //     let rtate = [];
@@ -292,4 +292,4 @@ let b=a++
 let c=++a
 let d=++a
 let e= a+b+c+d
-console.log(a,e)
+console.log(a,ef)
