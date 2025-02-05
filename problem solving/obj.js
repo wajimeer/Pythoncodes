@@ -125,3 +125,21 @@ console.log(library.book1.increment());
 // library.book3.increment();
 // library.book4.increment();
 // library.book5.increment();
+
+let arr = [
+    {product_name:"cleaner",price:200},
+    {product_name:"computer",price:30000},
+    {product_name:"laptop",price:40000},
+    {product_name:"keyboard",price:10000},
+]
+for (let i=0;i<arr.length;i++){
+    for (let j=i+1;j<arr.length;j++){
+        if(arr[i].price>arr[j].price){
+            let x= arr[i]
+            arr[i]=arr[j]
+            arr[j]=x
+        }
+        
+    }
+}
+console.log(arr)
