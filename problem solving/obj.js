@@ -26,6 +26,28 @@ let students=[
 for(let student of students){
     if (student.grade==="A"){
         console.log(student.name)
-    }
+    }10
 
 }
+let calculator= {
+    add:function (a,b){
+        return a+b;
+    },
+    subtract:function (a,b){
+        return a-b;
+    },
+    multiplie:function(a,b){
+        return a*b;
+    },
+    divide:function(a,b){
+        if(b!==0){
+            return a/b;
+        }else {
+            "zero cannot be divided "
+        }
+    }
+    
+}
+console.log(calculator.add(12,13))
+
+
