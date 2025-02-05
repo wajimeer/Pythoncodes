@@ -62,6 +62,7 @@ let library = {
         increment: function () {
             if (this.clientPrice < this.original_price - 200) {
                 alert("This price is too low!");
+                console.log("this price is low")
             }
             if(this.original_price-200===clientPrice){
                 console.log("the book is your's")
