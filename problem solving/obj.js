@@ -215,3 +215,4 @@ class Bankacount{
 let persons = new Bankacount('waji',50000)
 persons.withdraw(2000)
 persons.totalamount()
+
