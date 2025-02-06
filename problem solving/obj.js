@@ -187,3 +187,31 @@ library.prototype.increasingprice=function(){
 let person3= new library('books','new',2018,2000,1800)
 console.log(person3)
 person3.increasingprice()
+
+class Bankacount{
+    constructor(accounholdername,totalbalance){
+        this.accounholdername=accounholdername;
+        this.totalbalance=totalbalance;
+    }
+    deposite(amount) {
+        this.totalbalance+=amount
+        console.log(`thankyou for depoiste ${this.deposite} this amount`)
+        }
+        withdraw(amount){
+            if(amount<=this.totalbalance){
+                this.totalbalance-=amount
+               
+                console.log(`thankyou to use this ATM`)
+                console.log(`beep beep your ${amount}`)
+            }else{
+                console.log("your balance is to much low please deposite first")
+            }
+       
+        }
+        totalamount(){
+         console.log(`your total balance is ${this.totalbalance}`)
+        }
+}
+let persons = new Bankacount('waji',50000)
+persons.withdraw(2000)
+persons.totalamount()
